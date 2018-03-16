@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div ng-app="PiloApp" ng-controller="ClickDemoCtrl">
+    <div>
+        <input type="button" value="Click" ng-click="AngularjsButtonClick()" />
+    </div>
+    <div>
+        <span ng-bind="ProcessMessage"></span>
+    </div>
+</div>
+<script src="~/angularjs/app.js"></script>
+<script src="~/angularjs/ClickDemoController.js"></script>

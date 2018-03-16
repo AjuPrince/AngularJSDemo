@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "CookieDemo";
+}
+
+
+<div ng-app="PiloApp" ng-controller="CookieCtrl">
+    Name:
+    <input type="text" ng-model="CookieValues" />
+    <br />
+    <br />
+    <input type="button" ng-click="Write_Cookie()" value="Write Cookie" />
+    <input type="button" ng-click="Read_Cookie()" value="Read Cookie" />
+    <input type="button" ng-click="Remove_Cookie()" value="Remove Cookie" />
+</div>
+<script src="~/angularjs/app.js"></script>
+<script src="~/angularjs/CookieController.js"></script>
+<script src="~/Scripts/angular-cookies.js"></script>

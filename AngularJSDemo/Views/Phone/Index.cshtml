@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+<div ng-app="PiloApp" ng-controller="PhoneCtrl">
+    <select ng-model="ddlPhones" ng-options="MobilePhone.Name for MobilePhone in Phones"></select>
+    <div>
+        <input type="button" value="选择" ng-click="GetValues()" />
+    </div>
+</div>
+
+<script src="~/Angularjs/app.js"></script>
+<script src="~/angularjs/PhoneController.js"></script>

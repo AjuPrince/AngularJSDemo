@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div ng-app="PiloApp" ng-controller="CarCtrl">
+    @*<select>
+            <option value="0" label="Plesae Select"></option>
+            <option ng-repeat="Car in Cars" value="{{Car.ID}}" ng-selected="{{Car.Selected==true}}">{{Car.Name}}</option>
+        </select>*@
+    <select ng-model="SelectedCar" ng-options="Car.Name for Car in Cars" ng-change="GetValues()"></select>
+</div>
+<script src="~/angularjs/app.js"></script>
+<script src="~/angularjs/CarController.js"></script>

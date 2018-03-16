@@ -1,0 +1,1 @@
+﻿var piloApp = angular.module("PiloApp", ['ngCookies']);
